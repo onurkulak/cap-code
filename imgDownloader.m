@@ -1,9 +1,9 @@
 % downloads images required for the project
-
+options = weboptions('Timeout',Inf);
+opt = weboptions;
+opt.Timeout = 10000;
 for i = 1:size(train_urls)
     url = char(train_urls(i));
-    opt = weboptions;
-    opt.Timeout = 10000;
     websave(strcat('C:\Users\taha\Documents\MATLAB\Neural\Final_Project\cap-code\trainimg\',num2str(i)), url(url~=' ' & url~=0),opt)
 end
 
