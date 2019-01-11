@@ -32,7 +32,7 @@ feature_vec_test_ims = h5read('eee443_project_dataset.h5', '/test_ims');
 %labels (features_size x dictionary_size) is a matrix where each row corresponds to one-hot encoding of unique labels that
 %describe the feature.
 [labels_train] = extract_labels(feature_vec_train_ims,train_cap,train_image_ids);
-[learned_weights1, learned_weights2] = train_label_network(feature_vec_train_ims,labels_train');
+[learned_weights1, learned_weights2] = train_label_network(feature_vec_train_ims,labels_train',43200);
 
 [labels_test] = extract_labels(feature_vec_test_ims,test_cap,test_image_ids);
 % test_results = predictor(feature_vec_test_ims,learned_weights1,learned_weights2);
