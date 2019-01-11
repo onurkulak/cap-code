@@ -2,3 +2,5 @@
 /testimg/*
 *.h5
 /imgDownloader.m
+*.asv
+*.mat
