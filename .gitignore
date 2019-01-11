@@ -1,3 +1,5 @@
 /trainimg/*
 /testimg/*
 *.h5
+*.asv
+*.mat
