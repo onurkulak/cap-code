@@ -1,3 +1,4 @@
 /trainimg/*
 /testimg/*
 *.h5
+/imgDownloader.m
